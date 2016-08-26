@@ -2,6 +2,9 @@
 	body{
 		background: pink;
 	}
+	div#chavo{
+		background-size: 100% 100%;
+	}
 	div.pad{
 		padding: 0%;
 	}
