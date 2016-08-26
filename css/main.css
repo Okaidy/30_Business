@@ -1,7 +1,45 @@
-/*tamaño de logo*/
-/*img{
-	width: 100%;
-}*/
-#logo{
-	width: 50%; 
+/*imagen de fondo*/
+#chavo{
+	background-image: url(../image/large.jpg);
+	height: 600px;
+	background-size:cover;
+	/*background-position: center;*/
+	background-repeat: no-repeat;
+}
+/*opacidad pra imagen de fondo*/
+.fondo{
+	height: 100%;
+	background-color: rgba(0,0,0,0.6);
+	padding-top: 18.5%;
+}
+/*margen de menun a top*/
+.mgt2{
+	margin-top: 2%;
+}
+/*color de fondo*/
+.azul{
+	background-color: rgba(82, 141, 210,.7);
+	padding: 1%;
+}
+/*letra blanca*/
+.blanca{
+	color: white;
+}
+.mgt{
+	margin-top: 8.6%;
+}
+.pad{
+	padding: 0% 23%;
+}
+.font42{
+	font-size: 42px;
+}
+.white{
+	background-color: white;
+}
+.fon25{
+	font-size: 24px;
+}
+.tazul{
+	color:#73B7FF;
 }

@@ -4,57 +4,83 @@
 	  	<meta charset="utf-8">
 	  	<title>User Testing 360°</title>
 	  	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	  	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+  		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	  	<link rel="stylesheet" href="css/font-awesome.min.css">
 	  	<link rel="stylesheet" href="css/bootstrap.min.css">
 	  	<link rel="stylesheet" href="css/icomoon.css">
 	  	<link rel="stylesheet" href="css/animate.css">
+	  	<link rel="stylesheet" href="css/queries.css">
 	  	<link rel="stylesheet" href="css/main.css">
 	</head>
 	<body>
 		<!--Escribe aqui tu codigo-->
-		<nav class="navbar navbar-fixed-top"><!-- menu de la pagina -->
+		<nav class="navbar navbar-fixed-top mgt2"><!-- menu de la pagina -->
 			<div class="container">
 				<div class="navbar-header"><!-- hamburgesa -->
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
 				        <span class="sr-only">Menu</span>
-				        <span class="icon-bar"></span>
-				        <span class="icon-bar"></span>
-				        <span class="icon-bar"></span>
+				        <span class="white icon-bar"></span>
+				        <span class="white icon-bar"></span>
+				        <span class="white icon-bar"></span>
 	      			</button>
-	      			<a  href="#"><img id="logo" src="image/user-r.png" alt="logo"></a><!-- El titulo -->
+	      			<a href="#"><img src="image/user-r.png" alt="logo"></a><!-- El titulo -->
 				</div><!-- fin de hamburguesa -->
 				<div class="collapse navbar-collapse navbar-right" id="menu"><!--menu escritorio  -->
 					<ul class="nav navbar-nav text-center">
-	        			<li><a href="#s">¿Qué me ofrece?</a></li>
-	        			<li><a href="#f">¿cómo funciona?</a></li>
-	        			<li><a href="#u">¿por qué usarlo?</a></li>
-	        			<li><a href="#c">Contactanos</a></li>
+	        			<li><a class="blanca" href="#s">¿Qué me ofrece?</a></li>
+	        			<li><a class="blanca" href="#f">¿cómo funciona?</a></li>
+	        			<li><a class="blanca" href="#u">¿por qué usarlo?</a></li>
+	        			<li><a class="blanca" href="#c">Contactanos</a></li>
 					</ul>
 				</div><!-- fin de menu de escritorio -->
 			</div>
 		</nav><!-- fin de menu de pagina -->
-		<header class=""><!-- encabezado -->
-			<div class="container"><!-- container -->
-				<div class="row"><!--  renglon de titulo-->
-					<div class="col-xs-12 col-md-12"><!-- columnas para  titulo -->
-						<h1>Obtén videos de personas reales utilizando tu sitio web, en 1 Hora</h1>
-					</div><!-- cierre de columnas-->
-				</div><!-- fin de renglon de titulo -->
-				<div class="row"><!--  renglon de prueba-->
-					<div class="col-xs-12 col-md-6"><!-- columnas de prueba -->
-						<h2>PRUEBA GRATUITA</h2>
-						<p>Obtén un video gratis de 5 minutos</p>
-					</div><!--  cierre de columnas de prueba-->
-					<div class="col-md-6 col-xs-12"><!-- boton -->
-						<button>Pruebalo gratis</button>
-					</div><!-- fin boton -->
-				</div><!-- fin de renglon de prueba -->
-			</div><!-- fin de container -->
+		<header id="chavo"><!-- encabezado -->
+			<div class="fondo blanca">
+				<div class="container"><!-- container -->
+					<div class="row text-center"><!--  renglon de titulo-->
+						<div class="col-xs-12 col-md-12 pad"><!-- columnas para  titulo -->
+							<h1 class="font42">Obtén videos de personas reales utilizando tu sitio web, en 1 Hora</h1>
+						</div><!-- cierre de columnas-->
+					</div><!-- fin de renglon de titulo -->
+				</div><!--fin de container -->
+				<div class="container-fluid mgt">	<!-- container  fluid-->
+					<div class="row azul"><!--  renglon de prueba-->
+						<div class="col-xs-12 col-md-6 text-right"><!-- columnas de prueba -->
+							<h2 class="fon25">PRUEBA GRATUITA</h2>
+							<p>Obtén un video gratis de 5 minutos</p>
+						</div><!--  cierre de columnas de prueba-->
+						<div class="col-md-6 col-xs-12 text-left"><!-- boton -->
+							<button type="button" class="btn btn-lg" data-toggle="modal" data-target="#myModal">Pruebalo gratis</button>
+							<!-- Modal -->
+							<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+							  <div class="modal-dialog" role="document">
+							    <div class="modal-content">
+							      <div class="modal-header">
+							        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							          <span aria-hidden="true">&times;</span>
+							        </button>
+							        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+							      </div>
+							      <div class="modal-body">
+							      </div>
+							      <div class="modal-footer">
+							        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+							        <button type="button" class="btn btn-primary">Save changes</button>
+							      </div>
+							    </div>
+							  </div>
+							</div>
+						</div><!-- fin boton -->
+					</div><!-- fin de renglon de prueba -->
+				</div><!-- fin de container fluid-->
+			</div><!-- fin de fondo-->
 		</header><!-- fin de encabezado -->
 		<a name="s"></a><section><!-- nuestros servicios -->
 			<div class="container"><!-- container -->
 				<div class="row"><!-- renglon titulo -->
-					<div class="col-xs-12 col-md-12"><!--columnas pra titulo-->
+					<div class="col-xs-12 col-md-12 text-center tazul"><!--columnas pra titulo-->
 						<h2>NUESTROS SERVICIOS</h2>
 					</div><!--fin de colmnas -->
 				</div><!--fin de renglon de titulo-->
@@ -69,9 +95,9 @@
 					<div class="col-xs-12 col-md-4"><!-- segundo servicio -->
 						<div><!-- circulo -->
 							<span class="icon-clock"></span>
-							<h3>Compra el servicio completo</h3>
-							<p>Si te gustó; copra nuestro servicio completo que incluye 7 videos y feedback.</p>
 						</div><!-- fin de circulo -->
+						<h3>Compra el servicio completo</h3>
+						<p>Si te gustó; copra nuestro servicio completo que incluye 7 videos y feedback.</p>
 					</div><!-- fin de servcio -->
 					<div class="col-xs-12 col-md-4"><!-- tercer servicio -->
 						<div><!-- circulo -->

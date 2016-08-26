@@ -1,0 +1,14 @@
+@media screen and (max-width: 768px) {
+	body{
+		background: pink;
+	}
+	div.pad{
+		padding: 0%;
+	}
+	div.text-right{
+		text-align: center;
+	}
+	div.text-left{
+		text-align: center;
+	}
+}
