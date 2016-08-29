@@ -131,3 +131,16 @@ footer{
 	background-repeat: no-repeat;
 	height: 666px;
 }
+.f{
+	padding:1% 10% 0% 10%;
+}
+.rojo{
+	color: red;
+}
+.padf{
+	padding: 10% 15%;
+}
+
+.borde{
+	border-top: 5px solid #709FD7;
+}
