@@ -2,10 +2,16 @@
 <html lang="en">
 	<head>
 	  	<meta charset="utf-8">
+	  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
 	  	<title>User Testing 360°</title>
 	  	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 	  	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
   		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  		<link rel="stylesheet" href="js/bootstrap.min.js">
+  		<link rel="stylesheet" href="js/jquery.js">
+  		<link rel="stylesheet" href="js/jquery.easing.min.js">
+  		<link rel="stylesheet" href="js/main.js">
 	  	<link rel="stylesheet" href="css/font-awesome.min.css">
 	  	<link rel="stylesheet" href="css/bootstrap.min.css">
 	  	<link rel="stylesheet" href="css/icomoon.css">
@@ -52,88 +58,97 @@
 							<p>Obtén un video gratis de 5 minutos</p>
 						</div><!--  cierre de columnas de prueba-->
 						<div class="col-md-6 col-xs-12 text-left"><!-- boton -->
-							<button type="button" class="btn btn-lg mgt2" id="boton" data-toggle="modal" data-target="#myModal">Pruebalo gratis</button>
+							<button type="button" class="btn btn-lg mgt2" id="boton" data-toggle="modal" data-target="#Modal">Pruebalo gratis</button>
 							<!-- Modal -->
-							<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+							<div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 							  <div class="modal-dialog" role="document">
 							    <div class="modal-content">
 							      <div class="modal-header">
 							        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 							          <span aria-hidden="true">&times;</span>
 							        </button>
-							        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+							        <h4 class="modal-title tazul" id="myModalLabel">Video</h4>
 							      </div>
 							      <div class="modal-body">
+							       	<iframe width="100%" height="315" src="https://www.youtube.com/embed/u7MDfG9ZJTU" frameborder="0" allowfullscreen></iframe>
 							      </div>
 							      <div class="modal-footer">
-							        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-							        <button type="button" class="btn btn-primary">Save changes</button>
+							        <button type="button" class="btn btn-primary" data-dismiss="modal">Salir</button>
 							      </div>
 							    </div>
 							  </div>
-							</div>
+							</div><!-- fin modal-->
 						</div><!-- fin boton -->
 					</div><!-- fin de renglon de prueba -->
 				</div><!-- fin de container fluid-->
 			</div><!-- fin de fondo-->
 		</header><!-- fin de encabezado -->
-		<a name="s"></a><section><!-- nuestros servicios -->
+		<a name="s"></a><section class="contenido"><!-- nuestros servicios -->
 			<div class="container"><!-- container -->
 				<div class="row"><!-- renglon titulo -->
 					<div class="col-xs-12 col-md-12 text-center tazul"><!--columnas pra titulo-->
 						<h2>NUESTROS SERVICIOS</h2>
 					</div><!--fin de colmnas -->
 				</div><!--fin de renglon de titulo-->
-				<div class="row"><!--renglon iconos -->
-					<div class="col-xs-12 col-md-4"><!-- primer servicio -->
-						<div><!-- circulo -->
-							<span class="icon-video"></span>
-							<h3>Pruebalo gratis</h3>
-							<p>Obtén un primer video screencast de un usuario navegando tu página.</p>
+				<div class="row mgt2"><!--renglon iconos -->
+					<div class="col-xs-12 col-md-4 text-center"><!-- primer servicio -->
+						<div class="circulo"><!-- circulo -->
+							<span class="tazul icon-video fa-2x"></span>
 						</div><!-- fin de circulo -->
+						<h3 class="fazul">Pruebalo gratis</h3>
+						<p>Obtén un primer video screencast de un usuario navegando tu página.</p>
 					</div><!-- fin de servcio -->
-					<div class="col-xs-12 col-md-4"><!-- segundo servicio -->
-						<div><!-- circulo -->
-							<span class="icon-clock"></span>
+					<div class="col-xs-12 col-md-4 text-center"><!-- segundo servicio -->
+						<div class="circulo"><!-- circulo -->
+							<span class="icon-clock tazul fa-2x"></span>
 						</div><!-- fin de circulo -->
-						<h3>Compra el servicio completo</h3>
+						<h3 class="fazul">Compra el servicio completo</h3>
 						<p>Si te gustó; copra nuestro servicio completo que incluye 7 videos y feedback.</p>
 					</div><!-- fin de servcio -->
-					<div class="col-xs-12 col-md-4"><!-- tercer servicio -->
-						<div><!-- circulo -->
-							<span class="icon-documents"></span>
-							<h3>Obtén el resultado en 1 día</h3>
-							<p>Te haremos llegar los videos y el feedback completo el mismo día.</p>
+					<div class="col-xs-12 col-md-4 text-center"><!-- tercer servicio -->
+						<div class="circulo"><!-- circulo -->
+							<span class="icon-documents tazul fa-2x"></span>
 						</div><!-- fin de circulo -->
+						<h3 class="fazul">Obtén el resultado en 1 día</h3>
+						<p>Te haremos llegar los videos y el feedback completo el mismo día.</p>
 					</div><!-- fin de servcio -->
 				</div><!-- fin de renglon iconos -->
 			</div><!--fin de container-->
 		</section><!-- fin de servicios -->
-		<hr>
-		<a name="f"></a><section><!--funcion-->
+		<section class="linea">
+			<hr>
+			<div class="flecha text-center">
+				<a href="#f"><img src="image/separador.png" alt=""></a>
+			</div>
+		</section>
+		<a name="f"></a><section ><!--funcion-->
 			<div class="container"><!-- container -->
-				<div class="row"><!-- renglon para ejemplo y video -->
+				<div class="row "><!-- renglon para ejemplo y video -->
 					<div class="col-xs-12 col-md-6"><!-- columnas ejemplo -->
-						<h2>Ejemplo de <img src="image/logo-2.jpg" alt="logo"></h2>
-						<p>En este video te damos un ejemplo de un integrante de nuestro panel evaluando la experiencia de usa de</p>
+						<h2 class="tazul text-center">Ejemplo de <img class="l" src="image/logo-2.jpg" alt="logo"></h2>
+						<p class="mgt5">En este video te damos un ejemplo de un integrante de nuestro panel evaluando la experiencia de usa de</p>
 						<small><a href="#">mimediamnzana.com</a></small>
-						<p>El objetivo de User Testing 360 es identificar situacions cosfusas de los usuarios en su web y describir soluciones, que garanticen una experiencia de uso satisfactoria.</p>
-						<img class="" src="image/flecha.png" alt="flecha">
+						<p class="mgt2">El objetivo de User Testing 360 es identificar situacions cosfusas de los usuarios en su web y describir soluciones, que garanticen una experiencia de uso satisfactoria.</p>
+						<div class="text-center mgt5 visible-lg visible-md"><img src="image/flecha.png" alt="flecha"></div>
 					</div><!-- fin de columnas -->
 					<div class="col-xs-12 col-md-6"><!--columnas video -->
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/u7MDfG9ZJTU" frameborder="0" allowfullscreen></iframe>
+						<iframe width="100%" height="315" src="https://www.youtube.com/embed/u7MDfG9ZJTU" frameborder="0" allowfullscreen></iframe>
 					</div><!-- fin de columnas de video -->
 				</div><!-- fin e renglon -->
-				<hr>
+			</div><!--fin de container -->
+		</section><!-- fin de funcion -->
+		<section class="quiero mgt5"><!-- lo quiero -->
+			<div class="container"><!--container  -->
 				<div class="row"><!-- renglon lo quiero -->
-					<div class="col-xs-12 col-md-6"><!-- foto -->
-						<img src="image/sec-2.jpg" alt="foto">
+					<div class="col-xs-12 col-md-6 manos"><!-- foto -->
+						<div class="fondo">
+						</div>
 					</div><!-- fin de foto -->
-					<div class="col-xs-12 col-md-6">
+					<div class="col-xs-12 col-md-6 pl">
 						<h2>Lo quiero ¿Qué hago?</h2>
-						<h3>Paso 1: Envianos tu link</h3>
+						<h3 class="tazul">Paso 1: Envianos tu link</h3>
 						<p>Al darle click al botón de prueba. Coloca tu nombre y tu correo electrónico a donde enviaremos el vídeo y el informe con el feedback.</p>
-						<h3>Paso 2: Describe a tu público objetivo</h3>
+						<h3 class="tazul">Paso 2: Describe a tu público objetivo</h3>
 						<p>Describe las acciones que quieres que evaluemos por ejemplo:</p>
 						<ul>
 							<li>A primera vista de ¿Qué crees que trata la página?</li>
@@ -141,19 +156,22 @@
 							<li>¿Es fácil o difícil leer los textos?</li>
 						</ul>
 						<p>Puedes preguntas como las que te mostramos.</p>
-						<h3>Paso 3: Recibe un video y el fedback completo</h3>
+						<h3 class="tazul">Paso 3: Recibe un video y el fedback completo</h3>
 						<p>Recibbe un combo de 7 videos y un informe detallado con las captaciones de usabilidad de tu producto.</p>
 					</div>
+					<span class="icon-pencil botones icono uno visible-lg visible-md"></span>
+					<span class="icon-tools-2 botones icono dos visible-lg visible-md"></span>
+					<span class="icon-magnifying-glass botones icono tres visible-lg visible-md"></span>
+					<a href="#u"><img class="icono cuatro" src="image/separador.png" alt=""></a>
 				</div><!-- fin de renglon -->
-				<hr>
 			</div><!-- fin de container -->
-		</section><!-- fin de funcion -->
-		<a name="u"></a><section><!-- porque usarlo -->
+		</section><!-- fin de lo quiero -->
+		<a name="u"></a><section class="contenido"><!-- porque usarlo -->
 			<div class="container"><!-- container -->
 				<div class="row"><!--  renglon-->
 					<div class="col-xs-12 col-md-6"><!--  texto-->
-						<h2>Por qué usar <img src="image/logo-2.jpg" alt="logo"></h2>
-						<p>En la era en la que nos encontramos, la web se ha convertido en el mejor sitio para llegar a millones de personas en segundos, pero ¿qué pasa si el producto digital que ofreces no es bueno o no se entiende? Pierdes esta enorme oportunidad. Con <a href="#">User TEsting 360</a>, puedes entender la experiencia de uso d tu página o producto digital y mejorarla para que satisfaga todas las necesidades de tus usuarios. Con <a href="#">User TEsting 360</a> podrás entender:</p>
+						<h2 class="tazul">Por qué usar <img class="l" src="image/logo-2.jpg" alt="logo"></h2>
+						<p>En la era en la que nos encontramos, la web se ha convertido en el mejor sitio para llegar a millones de personas en segundos, pero ¿qué pasa si el producto digital que ofreces no es bueno o no se entiende? Pierdes esta enorme oportunidad. Con <a href="#">User TEsting 360</a>, puedes entender la experiencia de uso d tu página o producto digital y mejorarla para que satisfaga todas las necesidades de tus usuarios. Con <a href="#">User Testing 360</a> podrás entender:</p>
 						<ul>
 							<li>¿Cómo tu púbico objetivo verdaderamente usa tu producto?</li>
 							<li>¿Qué se hace fácil o difícil al navegar en tu producto?</li>
@@ -162,32 +180,53 @@
 						<p><a href="#">"User Testing 360"</a> te ayudará a responder estas preguntas y muchas más. Es el toque final perfecto para tu página o producto digital.</p>
 					</div><!-- fin de texto -->
 					<div class="col-xs-12 col-md-6"><!-- foto -->
-						<img src="image/banner.jpg" alt="foto">
+						<img class="img-responsive" src="image/banner.jpg" alt="foto">
 					</div><!-- foto -->
 				</div><!-- fin de renglon -->
-				<div class="row"><!-- renglon de prueba -->
+			</div>
+			<div class="container-fluid mgt">	
+				<div class="row azul2 text-center blanca"><!-- renglon de prueba -->
 					<div class="col-xs-12 col-md-6"><!-- texto -->
-						<h2>PRUEBA GRATUITA</h2>
+						<h2 class="fon25">PRUEBA GRATUITA</h2>
 						<p>Obten un video de 5 minutos gratis</p>
 					</div><!-- fin de texto -->
 					<div class="col-xs-12 col-md-6"><!-- boton -->
-						<button>Pruebalo Gratis</button>
+						<button type="button" class="btn btn-lg mgt2" id="boton" data-toggle="modal" data-target="#Modal">Pruebalo gratis</button>
+							<!-- Modal -->
+							<div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+							  <div class="modal-dialog" role="document">
+							    <div class="modal-content">
+							      <div class="modal-header">
+							        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							          <span aria-hidden="true">&times;</span>
+							        </button>
+							        <h4 class="modal-title tazul" id="myModalLabel">Video</h4>
+							      </div>
+							      <div class="modal-body">
+							       	<iframe width="100%" height="315" src="https://www.youtube.com/embed/u7MDfG9ZJTU" frameborder="0" allowfullscreen></iframe>
+							      </div>
+							      <div class="modal-footer">
+							        <button type="button" class="btn btn-primary" data-dismiss="modal">Salir</button>
+							      </div>
+							    </div>
+							  </div>
+							</div><!-- fin modal-->
 					</div><!-- fi de boton -->
 				</div><!-- fin de renglon -->				
 			</div><!-- fin de container -->
 		</section><!--fin de usarlo -->
-		<a name="c"></a><footer><!--contacto-->
+		<a name="c"></a><footer class="blanca"><!--contacto-->
 			<div class="container"><!-- container -->
 				<div class="row"><!-- renglon -->
 					<div class="col-xs-12 col-md-6">
 						<p>Escribenos a:</p>
 						<a href="#">experienciadeusuario.lab@gmail.com</a>
-						<p>Telef:989637925</p>
+						<p class="mgt2">Telef:989637925</p>
 					</div>
-					<div class="col-xs-12 col-md-6">
-						<span class="icon-facebook"></span>
-						<span class="icon-twitter"></span>
-						<p>Copyright ©2015 - User Testing 360</p>
+					<div class="col-xs-12 col-md-6 text-right">
+						<span class="icon-facebook fa-2x"></span>
+						<span class="icon-twitter fa-2x"></span>
+						<p class="mgt2">Copyright ©2015 - User Testing 360</p>
 					</div>
 				</div><!-- fin de renglon -->
 			</div><!-- fin de container -->
