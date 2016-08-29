@@ -8,10 +8,7 @@
 	  	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 	  	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
   		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  		<link rel="stylesheet" href="js/bootstrap.min.js">
-  		<link rel="stylesheet" href="js/jquery.js">
-  		<link rel="stylesheet" href="js/jquery.easing.min.js">
-  		<link rel="stylesheet" href="js/main.js">
+  		<script src="js/main.js"></script>
 	  	<link rel="stylesheet" href="css/font-awesome.min.css">
 	  	<link rel="stylesheet" href="css/bootstrap.min.css">
 	  	<link rel="stylesheet" href="css/icomoon.css">
@@ -21,7 +18,7 @@
 	</head>
 	<body>
 		<!--Escribe aqui tu codigo-->
-		<nav class="navbar navbar-fixed-top mgt2"><!-- menu de la pagina -->
+		<nav class="navbar navbar-fixed-top  mgt2"><!-- menu de la pagina -->
 			<div class="container">
 				<div class="navbar-header"><!-- hamburgesa -->
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
@@ -33,11 +30,11 @@
 	      			<a href="#"><img src="image/user-r.png" alt="logo"></a><!-- El titulo -->
 				</div><!-- fin de hamburguesa -->
 				<div class="collapse navbar-collapse navbar-right" id="menu"><!--menu escritorio  -->
-					<ul class="nav navbar-nav text-center">
-	        			<li><a class="blanca" href="#s">¿Qué me ofrece?</a></li>
-	        			<li><a class="blanca" href="#f">¿cómo funciona?</a></li>
-	        			<li><a class="blanca" href="#u">¿por qué usarlo?</a></li>
-	        			<li><a class="blanca" href="contact.html">Contactanos</a></li>
+					<ul class="nav navbar-nav text-center" id="main_nav">
+	        			<li><a class="blanca smoothScroll" href="#s">¿Qué me ofrece?</a></li>
+	        			<li><a class="blanca smoothScroll" href="#f">¿cómo funciona?</a></li>
+	        			<li><a class="blanca smoothScroll" href="#u">¿por qué usarlo?</a></li>
+	        			<li><a class="blanca smoothScroll" href="contact.html">Contactanos</a></li>
 					</ul>
 				</div><!-- fin de menu de escritorio -->
 			</div>
@@ -49,7 +46,7 @@
 						<div class="col-xs-12 col-md-12 pad"><!-- columnas para  titulo -->
 							<h1 class="font42">Obtén videos de personas reales utilizando tu sitio web, en 1 Hora</h1>
 						</div><!-- cierre de columnas-->
-					</div><!-- fin de renglon de titulo -->
+					</div><!-- fin de renglon de titulo --> 
 				</div><!--fin de container -->
 				<div class="container-fluid mgt">	<!-- container  fluid-->
 					<div class="row azul"><!--  renglon de prueba-->
@@ -58,7 +55,7 @@
 							<p>Obtén un video gratis de 5 minutos</p>
 						</div><!--  cierre de columnas de prueba-->
 						<div class="col-md-6 col-xs-12 text-left"><!-- boton -->
-							<button type="button" class="btn btn-lg mgt2" id="boton" data-toggle="modal" data-target="#Modal">Pruebalo gratis</button>
+							<button type="button" class="btn btn-lg mgt2 animated pulse" id="boton" data-toggle="modal" data-target="#Modal">Pruebalo gratis</button>
 							<!-- Modal -->
 							<div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 							  <div class="modal-dialog" role="document">
@@ -83,7 +80,7 @@
 				</div><!-- fin de container fluid-->
 			</div><!-- fin de fondo-->
 		</header><!-- fin de encabezado -->
-		<a name="s"></a><section class="contenido"><!-- nuestros servicios -->
+		<a name="s"></a><section id="s" class="post_article contenido"><!-- nuestros servicios -->
 			<div class="container"><!-- container -->
 				<div class="row"><!-- renglon titulo -->
 					<div class="col-xs-12 col-md-12 text-center tazul"><!--columnas pra titulo-->
@@ -92,21 +89,21 @@
 				</div><!--fin de renglon de titulo-->
 				<div class="row mgt2"><!--renglon iconos -->
 					<div class="col-xs-12 col-md-4 text-center"><!-- primer servicio -->
-						<div class="circulo"><!-- circulo -->
+						<div class="circulo morph"><!-- circulo -->
 							<span class="tazul icon-video fa-2x"></span>
 						</div><!-- fin de circulo -->
 						<h3 class="fazul">Pruebalo gratis</h3>
 						<p>Obtén un primer video screencast de un usuario navegando tu página.</p>
 					</div><!-- fin de servcio -->
 					<div class="col-xs-12 col-md-4 text-center"><!-- segundo servicio -->
-						<div class="circulo"><!-- circulo -->
+						<div class="circulo morph"><!-- circulo -->
 							<span class="icon-clock tazul fa-2x"></span>
 						</div><!-- fin de circulo -->
 						<h3 class="fazul">Compra el servicio completo</h3>
 						<p>Si te gustó; copra nuestro servicio completo que incluye 7 videos y feedback.</p>
 					</div><!-- fin de servcio -->
 					<div class="col-xs-12 col-md-4 text-center"><!-- tercer servicio -->
-						<div class="circulo"><!-- circulo -->
+						<div class="circulo morph"><!-- circulo -->
 							<span class="icon-documents tazul fa-2x"></span>
 						</div><!-- fin de circulo -->
 						<h3 class="fazul">Obtén el resultado en 1 día</h3>
@@ -118,10 +115,10 @@
 		<section class="linea">
 			<hr>
 			<div class="flecha text-center">
-				<a href="#f"><img src="image/separador.png" alt=""></a>
+				<a href="#f"><img class="bw" src="image/separador.png" alt=""></a>
 			</div>
 		</section>
-		<a name="f"></a><section ><!--funcion-->
+		<a name="f"></a><section id="f" class="post_article"><!--funcion-->
 			<div class="container"><!-- container -->
 				<div class="row "><!-- renglon para ejemplo y video -->
 					<div class="col-xs-12 col-md-6"><!-- columnas ejemplo -->
@@ -129,7 +126,7 @@
 						<p class="mgt5">En este video te damos un ejemplo de un integrante de nuestro panel evaluando la experiencia de usa de</p>
 						<small><a href="#">mimediamnzana.com</a></small>
 						<p class="mgt2">El objetivo de User Testing 360 es identificar situacions cosfusas de los usuarios en su web y describir soluciones, que garanticen una experiencia de uso satisfactoria.</p>
-						<div class="text-center mgt5 visible-lg visible-md"><img src="image/flecha.png" alt="flecha"></div>
+						<div class="text-center mgt5 visible-lg visible-md"><img class="animated flash" src="image/flecha.png" alt="flecha"></div>
 					</div><!-- fin de columnas -->
 					<div class="col-xs-12 col-md-6"><!--columnas video -->
 						<iframe width="100%" height="315" src="https://www.youtube.com/embed/u7MDfG9ZJTU" frameborder="0" allowfullscreen></iframe>
@@ -162,11 +159,11 @@
 					<span class="icon-pencil botones icono uno visible-lg visible-md"></span>
 					<span class="icon-tools-2 botones icono dos visible-lg visible-md"></span>
 					<span class="icon-magnifying-glass botones icono tres visible-lg visible-md"></span>
-					<a href="#u"><img class="icono cuatro" src="image/separador.png" alt=""></a>
+					<a href="#u"><img class="icono cuatro visible-lg visible-md bw" src="image/separador.png" alt=""></a>
 				</div><!-- fin de renglon -->
 			</div><!-- fin de container -->
 		</section><!-- fin de lo quiero -->
-		<a name="u"></a><section class="contenido"><!-- porque usarlo -->
+		<a name="u"></a><section id="u" class="post_article contenido"><!-- porque usarlo -->
 			<div class="container"><!-- container -->
 				<div class="row"><!--  renglon-->
 					<div class="col-xs-12 col-md-6"><!--  texto-->
@@ -191,7 +188,7 @@
 						<p>Obten un video de 5 minutos gratis</p>
 					</div><!-- fin de texto -->
 					<div class="col-xs-12 col-md-6"><!-- boton -->
-						<button type="button" class="btn btn-lg mgt2" id="boton" data-toggle="modal" data-target="#Modal">Pruebalo gratis</button>
+						<button type="button" class="btn btn-lg mgt2 animated pulse" id="boton" data-toggle="modal" data-target="#Modal">Pruebalo gratis</button>
 							<!-- Modal -->
 							<div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 							  <div class="modal-dialog" role="document">
@@ -224,8 +221,8 @@
 						<p class="mgt2">Telef:989637925</p>
 					</div>
 					<div class="col-xs-12 col-md-6 text-right">
-						<a href="https://www.facebook.com/"><span class="fazul icon-facebook fa-2x"></span></a>
-						<a href="https://twitter.com/"><span class="fazul icon-twitter fa-2x ml"></span></a>
+						<a href="https://www.facebook.com/"><span class="cambio fazul icon-facebook fa-2x"></span></a>
+						<a href="https://twitter.com/"><span class="fazul icon-twitter fa-2x ml cambio"></span></a>
 						<p class="mgt2">Copyright ©2015 - User Testing 360</p>
 					</div>
 				</div><!-- fin de renglon -->
