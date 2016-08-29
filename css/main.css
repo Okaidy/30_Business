@@ -121,3 +121,13 @@ footer{
 	background-color: #2A3541;
 	padding: 2% 0%;
 }
+.ml{
+	margin-left: 3%;
+}
+/*contacto*/
+#des{
+	background-image: url(../image/large.jpg);
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+	height: 666px;
+}
