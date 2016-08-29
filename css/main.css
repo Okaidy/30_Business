@@ -1,0 +1,202 @@
+/*imagen de fondo*/
+#chavo{
+	background-image: url(../image/large.jpg);
+	background-size:cover;
+	background-repeat: no-repeat;
+}
+/*opacidad pra imagen de fondo*/
+.fondo{
+	height: 100%;
+	background-color: rgba(0,0,0,0.6);
+	padding-top: 18.5%;
+}
+/*margen de menun a top*/
+.mgt2{
+	margin-top: 2%;
+}
+/*color de fondo*/
+.azul{
+	background-color: rgba(82, 141, 210,.7);
+	padding: 1%;
+}
+/*letra blanca*/
+.blanca{
+	color: white;
+}
+.mgt{
+	margin-top: 8.6%;
+}
+.pad{
+	padding: 0% 23%;
+}
+.font42{
+	font-size: 42px;
+}
+.white{
+	background-color: white;
+}
+.fon25{
+	font-size: 24px;
+}
+.tazul{
+	color:#73B7FF;
+}
+.fazul{
+	color: #6987a4;
+}
+#boton{
+	background-color:transparent;
+	border:1px solid white;
+}
+.contenido{
+	padding-top: 5%;
+}
+.circulo{
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	margin: auto;
+	padding-top: 40px;
+	box-shadow: 0px 3px 6px rgba(0,0,0,.2);
+}
+.linea{
+	padding-top: 50px;
+}
+.flecha{
+	margin: auto;
+	width: 100px;
+	position: relative;
+	top: -76px; 
+}
+.l{
+	width: 40%;
+}
+.mgt5{
+	margin-top: 5%;
+}
+.manos{
+	background-image: url(../image/sec-2.jpg);
+	height: 500px;
+	background-size:cover;
+	padding:0%;
+}
+.botones{
+    display: inline-block;
+    font-size: 30px;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: #50BDEA;
+    color: white;
+}
+.quiero{
+    border-top: 1px solid rgba(0,0,0,.1);
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+.icono{
+    position:absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.uno{
+	margin-top: 6%;
+}
+.dos{
+	margin-top: 15%;	
+}
+.tres{
+	margin-top: 25%;
+}
+.cuatro{
+	margin-top: 33%;
+}
+.pl{
+	padding-left: 5%;
+}
+.azul2{
+	background-color: rgb(82, 141, 210);
+	padding: 1.5%;
+}
+footer{
+	background-color: #2A3541;
+	padding: 2% 0%;
+}
+.ml{
+	margin-left: 3%;
+}
+/*contacto*/
+#des{
+	background-image: url(../image/large.jpg);
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+	height: 666px;
+}
+.f{
+	padding:1% 10% 0% 10%;
+}
+.rojo{
+	color: red;
+}
+.padf{
+	padding: 10% 15%;
+}
+
+.borde{
+	border-top: 5px solid #709FD7;
+}
+.morph {
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+
+.morph:hover {
+  border-radius: 50%;
+  -webkit-transform: rotate(360deg);
+     -moz-transform: rotate(360deg);
+       -o-transform: rotate(360deg);
+          transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+}
+.brighten img {
+  -webkit-filter: brightness(-65%);
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+ 
+.brighten img:hover {
+  -webkit-filter: brightness(100%);
+}
+.bw {
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+
+.bw:hover {
+  -webkit-filter: grayscale(100%);
+}
+a:hover{
+	text-decoration: none;
+}
+.botones:hover{
+    color: #50BDEA;
+    background-color: white;
+}
+.cambio:hover{
+	color: white;
+}
+.isStuck {
+width: 100%;
+position: fixed;
+top:0px;
+}
+a.current {
+background-color: #222;
+}
